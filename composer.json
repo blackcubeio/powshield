@@ -1,0 +1,69 @@
+{
+    "name": "blackcube/powshield",
+    "description": "Blackcube POW Shield for Yii2",
+    "keywords": ["blackcube", "pow", "shield", "yii", "yii2", "captcha", "invisible"],
+    "homepage": "https://powshield.blackcube.io/",
+    "type": "yii2-extension",
+    "license": "proprietary",
+    "support": {
+        "issues": "https://github.com/blackcubeio/powshield/issues",
+        "wiki": "https://github.com/blackcubeio/powshield/wiki",
+        "source": "https://github.com/blackcubeio/powshield"
+    },
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "pgaultier@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-fileinfo": "*",
+        "ext-dom": "*",
+        "vlucas/phpdotenv": "~5.4",
+        "yiisoft/yii2": "~2.0.13"
+    },
+    "require-dev" : {
+        "codeception/codeception": "~5.0",
+        "codeception/module-yii2": "~1.1",
+        "codeception/module-asserts": "~2.0",
+        "yiisoft/yii2-debug":"~2.1",
+        "yiisoft/yii2-gii": "~2.2"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "blackcube\\powshield\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        }
+    }
+}
